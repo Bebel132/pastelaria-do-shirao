@@ -1,5 +1,4 @@
 # mt-ruim-ser-pobre
-<hr>
 <h1>Pastelaria do xirão</h1>
 <h2>Bibliotecas utilizadas:</h2>
 <ol>
