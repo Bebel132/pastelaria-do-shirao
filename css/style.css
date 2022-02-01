@@ -67,6 +67,10 @@ header {
 }
 
 .menu {
+  display: none;
+}
+
+.menu-block {
   position: fixed;
   height: 100vh;
   background-color: var(--cor-4);
@@ -75,6 +79,14 @@ header {
   width: 30%;
   z-index: 19;
   text-align: center;
+  display: block;
+  animation: fadeIn .5s;
+}
+
+@media screen and (max-width: 950px) {
+  .menu-block {
+    width: 100%;
+  }
 }
 
 .menu-wrapper {
@@ -88,38 +100,15 @@ header {
 }
 
 .menu__itens {
-  padding: 0.8em 1.8em;
-  border: 2px solid #17C3B2;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: .3s;
-  z-index: 1;
-  font-family: inherit;
-  color: #17C3B2;
-}
-
-.menu__itens::before {
-  content: '';
-  width: 0;
-  height: 300%;
-  position: absolute;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #17C3B2;
-  transition: .5s ease;
-  display: block;
-  z-index: -1;
-}
-
-.menu__itens:hover:before {
-  width: 105%;
+  color: var(--cor-3);
+  padding: 3rem 0;
+  transition: .5s;
+  font-weight: bolder;
 }
 
 .menu__itens:hover {
-  color: #111;
+  background-color: var(--cor-1);
+  color: var(--cor-4);
 }
 
 /*********************
@@ -318,7 +307,7 @@ section:nth-last-child(1) {
   background-image: linear-gradient(to top, var(--cor-3) 40%, rgb(109, 109, 109), rgba(0, 0, 0, 0));
   display: block;
   margin: auto;
-  animation: fadeInOut 1s;
+  animation: fadeIn 1s;
   position: absolute;
   padding-top: 2rem;
   text-align: center;
@@ -326,7 +315,7 @@ section:nth-last-child(1) {
   border-bottom-right-radius: 10px;
 }
 
-@keyframes fadeInOut {
+@keyframes fadeIn {
   0% {
       opacity: 0;
   }
