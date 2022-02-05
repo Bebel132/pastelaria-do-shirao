@@ -8,3 +8,4 @@ link: https://bebel132.github.io/mt-ruim-ser-pobre/
 <br>
 <br>
 <p>so Deus sabe se algum dia eu vou terminar isso</p>
+ta bugado saporrakkkkkk
