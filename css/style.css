@@ -43,7 +43,7 @@ html {
 
 header {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background-color: var(--cor-1);
 }
 
@@ -306,6 +306,13 @@ header {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .section-grid__itens {
+    width: 350px;
+    height: 300px;
+  }
+}
+
 /*********************
 
  - SECTION__FLEX
@@ -489,6 +496,12 @@ section iframe {
   animation: fadeRight .5s;
 }
 
+@media screen and (max-width: 950px) {
+  .localizacao-menu-visible {
+    width: 100%;
+  }
+}
+
 .localizacao-menu-visible a {
   color: var(--cor-3);
   text-decoration: none;
@@ -520,6 +533,7 @@ section iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
 
 .pedido-wrapper {
