@@ -306,6 +306,13 @@ header {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .section-grid__itens {
+    width: 350px;
+    height: 300px;
+  }
+}
+
 /*********************
 
  - SECTION__FLEX
@@ -487,6 +494,12 @@ section iframe {
   height: 55vh;
   padding-top: 6rem;
   animation: fadeRight .5s;
+}
+
+@media screen and (max-width: 950px) {
+  .localizacao-menu-visible {
+    width: 100%;
+  }
 }
 
 .localizacao-menu-visible a {
