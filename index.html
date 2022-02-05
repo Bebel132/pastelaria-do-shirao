@@ -26,6 +26,11 @@
           <li class="menu__itens">Localização</li>
         </a>
       </ul>
+      <div class="redes-sociais">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
     </nav>
     <header id="inicio">
       <div class="header-wrapper">
@@ -38,40 +43,40 @@
     </div>
     <section class="section-grid">
       <div id="sobre" class="section-grid-wrapper">
-        <div data-aos="fade-up" class="section-grid__itens box1">
+        <div data-aos="fade-up" data-aos-duration="1000" class="section-grid__itens box1">
           <div class="grid-itens__text grid-text1">
             <h1>Titulo</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae praesentium sunt soluta tenetur voluptate, rerum facere expedita, quod corrupti blanditiis fugit vel distinctio sit? Provident consequuntur natus exercitationem deserunt inventore!</p>
           </div>
         </div>
-        <div data-aos="fade-up" class="section-grid__itens box2">
+        <div data-aos="fade-up" data-aos-duration="1000" class="section-grid__itens box2">
           <img src="imagens/slide5.png" alt="">
         </div>
-        <div data-aos="fade-left" data-aos-duration="500" class="section-grid__itens box3">
+        <div data-aos="fade-left" data-aos-duration="1000" class="section-grid__itens box3">
           <div class="grid-itens__text grid-text2">
             <i class="fas fa-phone"></i>
             <h1>Titulo</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae praesentium sunt soluta tenetur voluptate, rerum facere expedita, quod corrupti blanditiis fugit vel distinctio sit? Provident consequuntur natus exercitationem deserunt inventore!</p>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" class="section-grid__itens box4">
+        <div data-aos="fade-left" data-aos-duration="1500" class="section-grid__itens box4">
           <div class="grid-itens__text grid-text2">
             <i class="fas fa-laptop"></i>
             <h1>Titulo</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae praesentium sunt soluta tenetur voluptate, rerum facere expedita, quod corrupti blanditiis fugit vel distinctio sit? Provident consequuntur natus exercitationem deserunt inventore!</p>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1500" class="section-grid__itens box5">
+        <div data-aos="fade-left" data-aos-duration="2000" class="section-grid__itens box5">
           <div class="grid-itens__text grid-text2">
             <i class="fas fa-utensils"></i>
             <h1>Titulo</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae praesentium sunt soluta tenetur voluptate, rerum facere expedita, quod corrupti blanditiis fugit vel distinctio sit? Provident consequuntur natus exercitationem deserunt inventore!</p>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="500" class="section-grid__itens box6">
+        <div data-aos="fade-up" data-aos-duration="1000" class="section-grid__itens box6">
           <img src="imagens/slide7.png" alt="">
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="section-grid__itens box7">
+        <div data-aos="fade-up" data-aos-duration="1500" class="section-grid__itens box7">
           <div class="grid-itens__text grid-text1">
             <h1>Titulo</h1>
             <p>Lorem ipsum dolor lore sit, amet consectetur adipisicing elit. Molestiae praesentium sunt soluta tenetur voluptate, rerum facere expedita, quod corrupti blanditiis fugit vel distinctio sit? Provident consequuntur natus exercitationem deserunt inventore!</p>
@@ -80,7 +85,7 @@
       </div>
     </section>
     <section>
-      <div data-aos="flip-left" class="section-flex-wrapper">
+      <div data-aos="flip-left" data-aos-duration="1000" class="section-flex-wrapper">
         <div class="section-flex__item"></div>
         <div class="section-flex__item"></div>
         <div class="section-flex__item"></div>
@@ -89,6 +94,56 @@
         <div class="section-flex__item"></div>
       </div>
     </section>
+  <section>
+    <div id="localizacao" class="localizacao-informacoes">
+      <div class="localizacao-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.603970656239!2d-38.600522552237!3d-3.7224131133344955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74b110faac3b1%3A0xec1b4c310da91be9!2sFlix%20Pastelaria!5e0!3m2!1spt-BR!2sbr!4v1643889953051!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <i id="menu-barras" class="fas fa-bars"></i>
+        <ul class="localizacao-menu-hidden">
+          <li><i class="fas fa-map-marker-alt"></i><span>Casa do xirao</span></li>
+          <li><i class="fas fa-clock"></i><span>Abre às 17:00</span></li>
+          <li><i class="fas fa-cart-arrow-down"></i><a href="#pedido"></a><span>Fazer um pedido</span></a></li>
+          <li><i class="fas fa-phone-alt"></i><span>4002-8922</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="pedido">
+    <div data-aos="zoom-in" class="pedido-wrapper">
+      <h1>Fazer um pedido</h1>
+        <form>
+          <label>Escolha os pasteis da sua preferência</label><br>
+          <select name="pasteis" id="pasteis">
+            <option value="misto">Misto</option>
+            <option value="queijo">Queijo</option>
+            <option value="presunto">Presunto</option>
+            <option value="frango">Frango</option>
+          </select><br>
+          <label>Suco: </label>
+          <input type="radio" name="suco" id="suco" value="sim"><label class="suco-label">sim</label>
+          <input type="radio" name="suco" id="suco" value="nao" checked><label class="suco-label">não</label><br>
+          <button class="calcular">Calcular preço</button>
+          <div class="saida-preco">00:00</div>
+        </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="redes-sociais">
+        <a href="#"><i class="footer-i fab fa-facebook"></i></a>
+        <a href="#"><i class="footer-i fab fa-instagram"></i></a>
+        <a href="#"><i class="footer-i fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-sobre">
+        <h1>Sobre</h1>
+        <p>No começo, eu tinha começado esse projeto na intenção de zuar com um amigo, porém vi a possibilidade de treinar técnicas que eu já tinha conhecido, além de também aprender novas.</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>copyright &copy; 2022 bebel</span>
+      <a href="#inicio" class="top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
   </main>
   <script src="js/script.js"></script>
 </body>
